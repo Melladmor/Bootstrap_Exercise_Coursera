@@ -51,6 +51,6 @@ body{
     background-color: #9575CD;
     color: white;
 }
-.card-header a{
+.card-header a,.navbar-text{
     cursor: pointer;
 }
