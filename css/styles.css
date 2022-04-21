@@ -47,3 +47,10 @@ body{
     border-bottom: 1px solid #ddd;
     padding: 10px;
 }
+.card-header{
+    background-color: #9575CD;
+    color: white;
+}
+.card-header a{
+    cursor: pointer;
+}
