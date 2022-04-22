@@ -32,7 +32,7 @@
                     <li class="nav-item"><a href="contactus.html" class="nav-link"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="loginModal">
                         <span class="fa fa-sign-in"></span>
                         Login</a>
                 </span>
@@ -131,7 +131,7 @@
         </div>
     </div>
 
-    <div id="loginModal" class="modal fade" role="dialog">
+    <div id="loginmodal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
                 <div class="modal-header">
@@ -182,7 +182,7 @@
 
 
                 <div class="col-12 col-sm-4 align-self-center text-center">
-                    <a data-toggle="modal" data-target="#reserveModal" class="btn btn-block nav-link btn-warning">Reserve Table</a>
+                    <a id="reverse" class="btn btn-block nav-link btn-warning">Reserve Table</a>
                 </div>
 
                 <!-- tooltip -->
@@ -474,7 +474,13 @@
                     }
 
                 });
-                
+            $('#reverse').click(function(){
+                $('#reserveModal').modal('show');
+            })
+
+            $('#loginModal').click(function(){
+                $('#loginmodal').modal('show');
+            })
 
             });
         </script>

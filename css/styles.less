@@ -4,7 +4,7 @@
 @background-pale: #D1C4E9;
 
 // Height variables
-@carousel-item-height: 300px;
+@carousel-item-hight: 300px;
 
 
 .zero-margin (@pad-up-dn: 0px, @pad-left-right: 0px) {
@@ -12,8 +12,13 @@
 	padding: @pad-up-dn @pad-left-right;
 }
 
+
+
+
+
+
 .row-header{
-    .zero-margin();
+    .zero-margin(0px,0px);
 }
 
 .row-content {
@@ -45,33 +50,55 @@ body{
 }
 
 .navbar-dark {
-     background-color: @background-dark;
+    background-color: @background-dark;
 }
 
-.tab-content {
+.tab-pane{
     border-left: 1px solid @lt-gray;
     border-right: 1px solid @lt-gray;
     border-bottom: 1px solid @lt-gray;
     padding: 10px;
 }
 
-.carousel {
-    background:@background-dark;
+.fa{
+    margin-right: 5px;
+}
+.card-header{
+    background-color: #9575CD;
+    color: white;
+}
+.card-header a,.navbar-text{
+    cursor: pointer;
+}
 
-    .carousel-item {
-        height: @carousel-item-height;
-        img {
-            position: absolute;
+.carousel{
+    background-color: @background-dark;
+
+    .carousel-item{
+        height: @carousel-item-hight;
+
+        img{
+            position: relative;
             top: 0;
             left: 0;
-            min-height: 300px;
+            min-height: @carousel-item-hight;
         }
     }
 }
 
-#carouselButton {
-    right:0px;
+#carouselButton{
     position: absolute;
+    right: 0px;
     bottom: 0px;
-    z-index: 1;
+}
+
+.modal-content{
+    .modal-header{
+        background-color: @background-dark;
+        color: floralwhite;
+    }
+    .modal-body{
+        background-color:@background-light;
+        color: floralwhite;
+    }
 }

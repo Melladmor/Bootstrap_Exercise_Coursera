@@ -1,6 +1,6 @@
-html{
+/* html{
     scroll-behavior: smooth;
-}
+} */
 .row-header{
     margin: 0px auto;
     padding: 0px auto;
@@ -72,4 +72,13 @@ body{
     right: 0px;
     bottom: 0px;
 
+}
+
+.modal-content .modal-header {
+    background-color: #512DA8;
+    color: floralwhite;
+}
+.modal-content .modal-body {
+    background-color: #9575CD;
+    color: floralwhite;
 }
