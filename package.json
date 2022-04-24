@@ -16,23 +16,29 @@
     "imagemin": "imagemin img/* --out-dir=\"dist/img/\"",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
-
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "copyfiles": "^2.4.1",
     "cssmin": "^0.4.3",
+    "grunt": "^1.5.2",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.1.0",
     "htmlmin": "^0.0.7",
     "imagemin-cli": "^4.0.0",
+    "jit-grunt": "^0.10.0",
     "less": "^4.1.2",
     "lite-server": "^2.3.0",
+    "node-sass": "^7.0.1",
     "onchange": "^7.1.0",
     "parallelshell": "^3.0.2",
     "rimraf": "^3.0.2",
     "sass": "^1.50.1",
+    "time-grunt": "^2.0.0",
     "uglify-js": "^3.15.4",
-    "usemin-cli": "^0.6.0"
+    "usemin-cli": "^0.0.7"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
